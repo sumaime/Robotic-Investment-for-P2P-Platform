@@ -16,7 +16,7 @@ How to decrease the default rate except purchasing more notes on the platform? W
 
 
 
-Process:
+# Process:
 
 Data ETL: 
 Download the data of 2014 and 2015 from lending club website and read from the local path. Choosing these two years is because most of the loans with term of three years have had a result, which can be our label. 
@@ -68,7 +68,7 @@ Feature engineering: Feature combining, expanding and encoding
 
 
 
-Build Models:
+# Build Models:
 Split train, test and validate data set to build model. 
 
 •	If using logistic regression, the data needs to be scaled. 
