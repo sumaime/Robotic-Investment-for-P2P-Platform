@@ -19,6 +19,8 @@ Process:
 Data ETL: 
 Download the data of 2014 and 2015 from lending club website and read from the local path. Choosing these two years is because most of the loans with term of three years have had a result, which can be our label. 
 
+
+
 Data preparation and cleansing: 
 Prepare the data by dealing with NaN values, categorical and numerical features. 
 
@@ -26,11 +28,17 @@ Prepare the data by dealing with NaN values, categorical and numerical features.
 
 •	Check the categorical features, we can see the following features are needed to be reformatted:
 
+
 o	Suppose to be numerical (term, int_rate, etc.). 
+
 o	extremely unbalanced (pymnt_plan, application_type, etc.).
+
 o	date-time features.
+
 o	include only one value and has no meaning to exist in features.
+
 o	contained many values but duplicated values due to capitalized words.
+
 
 •	Check the numerical data and drop the ones with high correlation (>90%).
 
@@ -44,6 +52,7 @@ Through EDA, we take business insights from features to get a better understandi
 •	debt_settlement_flag: When there is a flag, the applicant is 100% default. In that case, no matter how less the flag is, we need to keep it. 
 
 
+
 Feature engineering: Feature combining, expanding and encoding
 
 •	For categorical features with many unique values such as zip code and areas, transfer to frequency to decrease the dimension.
@@ -53,6 +62,7 @@ Feature engineering: Feature combining, expanding and encoding
 •	Label encode features such as grade and subgrade to ranks as numbers.
 
 •	One-hot encode other categorical features to dummy variables.
+
 
 
 Build Models:
