@@ -14,6 +14,8 @@ Although Lending Club has already helped investors separate the grade of borrowe
 
 How to decrease the default rate except purchasing more notes on the platform? We are designing a model for investors to predict whether the customer will fully pay their debt on Lending Club so that decrease the possible default rate. 
 
+
+
 Process:
 
 Data ETL: 
@@ -62,6 +64,7 @@ Feature engineering: Feature combining, expanding and encoding
 •	Label encode features such as grade and subgrade to ranks as numbers.
 
 •	One-hot encode other categorical features to dummy variables.
+
 
 
 
