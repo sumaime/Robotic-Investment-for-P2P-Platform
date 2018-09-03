@@ -16,14 +16,14 @@ How to decrease the default rate except purchasing more notes on the platform? W
 
 
 
-# Process:
+## Process:
 
-Data ETL: 
+### Data ETL: 
 Download the data of 2014 and 2015 from lending club website and read from the local path. Choosing these two years is because most of the loans with term of three years have had a result, which can be our label. 
 
 
 
-Data preparation and cleansing: 
+### Data preparation and cleansing: 
 Prepare the data by dealing with NaN values, categorical and numerical features. 
 
 •	Through checking the data, there are too many NAN values in the dataset for some features (over 50%) and we should delete them. 
@@ -46,7 +46,7 @@ o	contained many values but duplicated values due to capitalized words.
 
 
 
-Exploratory Data Analysis: 
+### Exploratory Data Analysis: 
 Through EDA, we take business insights from features to get a better understanding on project, for example,
 
 •	home_ownership: Only a small portion of applicants owns the home and they are less likely to default. “ANY” provides very limited information on result so we can drop the column. 
@@ -55,7 +55,8 @@ Through EDA, we take business insights from features to get a better understandi
 
 
 
-Feature engineering: Feature combining, expanding and encoding
+### Feature engineering: 
+Feature combining, expanding and encoding
 
 •	For categorical features with many unique values such as zip code and areas, transfer to frequency to decrease the dimension.
 
@@ -68,7 +69,7 @@ Feature engineering: Feature combining, expanding and encoding
 
 
 
-# Build Models:
+## Build Models:
 Split train, test and validate data set to build model. 
 
 •	If using logistic regression, the data needs to be scaled. 
