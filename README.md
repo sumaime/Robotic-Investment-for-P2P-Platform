@@ -1,6 +1,6 @@
-# Robotic-Investment-for-P2P-Platform 
+# Robotic Investment for Lending Club Background 
 
-                                    Robotic Investment for Lending Club Background
+                                    
 
 As data is becoming more important, lots of trade and investment are supported by robust models and algorithms. The modern investment more relies on models with a better win rate than intuition, or we call it financial technology. For example, if the bank needs to evaluate whether to provide loans to individuals or companies, it will collect the information including collateral, tax forms, income, credit rates, credit card paid back condition to estimate whether people will pay off the mortgage. Although banks have their own models, which make the requirement on multiple criteria such as the value of collateral, quantity of asset, impact of the economic condition and etc., the current evaluation benchmarks grow complex with the development of big data. There are many possible considerations, and even the level of aggressiveness of comments on the social network can be a variable added to the model. As more information gathered, institutions can get a model with more predictive power as increasing less correlated features.
 
