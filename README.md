@@ -1,7 +1,7 @@
 # Robotic Investment for Lending Club Background 
 
                                     
-
+## Summary
 As data is becoming more important, lots of trade and investment are supported by robust models and algorithms. The modern investment more relies on models with a better win rate than intuition, or we call it financial technology. For example, if the bank needs to evaluate whether to provide loans to individuals or companies, it will collect the information including collateral, tax forms, income, credit rates, credit card paid back condition to estimate whether people will pay off the mortgage. Although banks have their own models, which make the requirement on multiple criteria such as the value of collateral, quantity of asset, impact of the economic condition and etc., the current evaluation benchmarks grow complex with the development of big data. There are many possible considerations, and even the level of aggressiveness of comments on the social network can be a variable added to the model. As more information gathered, institutions can get a model with more predictive power as increasing less correlated features.
 
 There is no free lunch since trades come with risks. As people know, banks in US normally provide an extremely low-interest rate, which barely equals to zero on saving. On the other side, traditional banks are only willing to loan when the amount is over 30k with collaterals. To fulfill the desire that people want to have a mortgage below 30k to get through the financial difficulties, the market of peer to peer lending is growing.
@@ -31,15 +31,15 @@ Prepare the data by dealing with NaN values, categorical and numerical features.
 •	Check the categorical features, we can see the following features are needed to be reformatted:
 
 
-o	Suppose to be numerical (term, int_rate, etc.). 
+  o	Suppose to be numerical (term, int_rate, etc.). 
 
-o	extremely unbalanced (pymnt_plan, application_type, etc.).
+  o	extremely unbalanced (pymnt_plan, application_type, etc.).
 
-o	date-time features.
+  o	date-time features.
 
-o	include only one value and has no meaning to exist in features.
+  o	include only one value and has no meaning to exist in features.
 
-o	contained many values but duplicated values due to capitalized words.
+  o	contained many values but duplicated values due to capitalized words.
 
 
 •	Check the numerical data and drop the ones with high correlation (>90%).
@@ -76,7 +76,7 @@ Split train, test and validate data set to build model.
 
 •	XGBoost doesn’t need to be scaled and provides feature importance.
 
-The accuracy improved 2% by switching from logistic regression to XGboost.  
+The accuracy improved 0.2% by switching from logistic regression to XGboost.  
 
 
 
